@@ -1,0 +1,216 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Section Title */
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #555;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+table .actions button {
+  background-color: #28a745;
+  margin-right: 5px;
+}
+
+table .actions button:hover {
+  background-color: #218838;
+}
+
+table .actions button.delete {
+  background-color: #dc3545;
+}
+
+table .actions button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.search-bar svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+/* Modals */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal input,
+.modal select,
+.modal checkbox {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.modal input:focus,
+.modal select:focus {
+  border-color: #007bff;
+}
+
+.modal .permissions label {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.modal button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+/* Modal Close Button */
+.modal button.close {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modal button.close:hover {
+  background-color: #c82333;
+}
+
+/* For Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  .search-bar input {
+    padding: 5px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+}
