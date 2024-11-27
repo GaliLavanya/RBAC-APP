@@ -8,5 +8,6 @@ Role Management: Roles are defined with specific permissions (like user manageme
 A modal allows you to add or edit roles, and each role has a set of permissions that can be toggled on/off.
 Search and Filtering: Users can be searched by name or email, and the dashboard displays filtered results dynamically based on the search term.
 State Management: React's useState is used to manage the users, roles, search term, and modal visibility. When a user or role is added or edited, the state is updated and re-rendered.
+
 Technologies:
 The main technologies include React (with hooks and JSX), JavaScript ES6, Lucide-React (for icons), and CSS for styling
