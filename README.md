@@ -16,3 +16,6 @@ State Management: React's useState is used to manage the users, roles, search te
 
 Technologies:
 The main technologies include React (with hooks and JSX), JavaScript ES6, Lucide-React (for icons), and CSS for styling
+
+https://rbac-app-one.vercel.app/ 
+The above link is live repository of the Role-Based Access Control (RBAC) User Interface (UI).
